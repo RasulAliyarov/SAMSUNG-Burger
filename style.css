@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+#app__body {
+    transition: .4s;
+}
+
+.container {
+    width: 1000px;
+}
+
 .app__header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +21,13 @@
     font-family: sans-serif;
     align-items: center;
     position: relative;
+}
+
+.cards {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -29,6 +44,8 @@
     display: flex;
     list-style: none;
     column-gap: 30px;
+    margin-bottom: 0;
+
 }
 
 .buttons {
@@ -66,9 +83,9 @@
     width: 100%;
     height: fit-content;
     background-color: rgb(14, 43, 138);
-    position: absolute;
+    position: inherit;
     top: 80px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
@@ -96,9 +113,33 @@
     height: fit-content;
 }
 
+.app__content {
+    margin-top: 50px;
+
+
+}
+
+.cards {
+    row-gap: 30px;
+    column-gap: 56px;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 992px) {
+    .card {
+        width: 400px;
+    }
+
+    .app__content {
+        width: 95%;
+    }
+
     .burgDiv {
         display: none;
+    }
+
+    .cards {
+        justify-content: center;
     }
 
     .burger {

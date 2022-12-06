@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style.css">
+
+
     <title>Document</title>
 </head>
 
-<body>
+<body id="app__body">
     <header class="app__header">
-        <div class="logo">SAMSUNG</div>
+        <div class="logo elementtheme">SAMSUNG</div>
         <ul class="app__header__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Shop</a></li>
         </ul>
         <div>
-            <button class="buttons">Login</button>
-            <button class="buttons">Register</button>
+            <button class="buttons elementtheme">Login</button>
+            <button class="buttons elementtheme">Register</button>
+
+            <button class="buttons buttons--modified elementtheme" id="themeBtn">Theme</button>
+            <button class="buttons buttons--modified elementtheme" id="addBtn">Add</button>
         </div>
 
         <img class="burger" id="burgerBtn" src="/icons8-burger-32.png" alt="">
     </header>
-    
-    <div class="burgDiv">
+    <div class="burgDiv elementtheme">
         <div>
             <button class="buttons">Login</button>
             <button class="buttons">Register</button>
+            
         </div>
         <ul class=" app__header__list_resp">
             <li><a href="#">Home</a></li>
@@ -36,6 +46,14 @@
             <li><a href="#">Shop</a></li>
         </ul>
     </div>
+
+
+    <section class="app__content container">
+        <div class="cards">
+            
+        </div>
+    </section>
+
 
 
     <script src="/main.js"></script>
